@@ -1,5 +1,5 @@
 module EnumerateWords
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
 
   module Helper
     def enumerate_words(delimiter = ', ', conjunction = ' and ', &block)

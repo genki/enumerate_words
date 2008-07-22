@@ -1,3 +1,5 @@
 require 'enumerate_words'
 
-ApplicationHelper.send :include, EnumerateWords::Helper
+class ActionView::Base
+  include EnumerateWords::Helper
+end
