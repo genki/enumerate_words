@@ -66,7 +66,8 @@ spec = Gem::Specification.new do |s|
 		Dir.glob("{bin,doc,test,lib,templates,generator,extras,website,script}/**/*") + 
 		Dir.glob("ext/**/*.{h,c,rb}") +
 		Dir.glob("examples/**/*.rb") +
-		Dir.glob("tools/*.rb")
+		Dir.glob("tools/*.rb") +
+		Dir.glob("rails/*.rb")
 
 	s.extensions = FileList["ext/**/extconf.rb"].to_a
 end

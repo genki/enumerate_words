@@ -1,9 +1,12 @@
 
 = enumerate_words
 
+  Rails plugin for enumerating words in a view.
 
 == Description
 
+  This is a gem plugin for Ruby on Rails applications to enumerate some words
+  ina view.
 
 == Installation
 
@@ -21,9 +24,13 @@
 
 == Synopsis
 
+  <% enumerate_words do |_and_| %>
+    Dog <%=_and_%> Cat <%=_and_%> Rat
+    <%# => Dog, Cat and Rat %>
+  <% end %>
 
 == Copyright
 
 Author::    Genki Takiuchi <genki@s21g.com>
 Copyright:: Copyright (c) 2008 Genki Takiuchi
-License::   
+License::   MIT License
