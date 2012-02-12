@@ -1,5 +1,5 @@
 module EnumerateWords
-  VERSION = '0.0.2'
+  VERSION = '0.1.0'
 
   module Helper
     def enumerate_words(delimiter = ', ', conjunction = ' and ', &block)
@@ -8,7 +8,7 @@ module EnumerateWords
       delimiters = [delimiter] * items.size
       delimiters[-1] = conjunction
       result = delimiters.zip(items).flatten[1..-1].join('')
-      concat result, block.binding
+      concat result
     end
   end
 end
